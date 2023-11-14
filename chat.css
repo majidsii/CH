@@ -111,7 +111,6 @@ body{
 }
 .chat_body{
     background-color: white;
-    height: 600px;
     padding: 20px;
     display: flex;
     flex-direction: column;
