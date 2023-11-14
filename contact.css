@@ -4,14 +4,14 @@
 }   
 
 body{
-    max-width: 720px;
+    max-width: 480px;
     min-width: 320px;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 .container{
  width: 100%;
@@ -19,11 +19,11 @@ body{
  display: flex;
  flex-direction: column;
  align-items: center;
- background-color: #eeeeee;
+ background-color: #ffffff;
 }
 
 .header{
-    background-color: #eeeeee;
+    background-color: #ffffff;
     display: flex;
     width: 100%;
     align-items: center;
@@ -65,17 +65,19 @@ body{
 
 .nav{
     display: flex;
-    justify-content: space-between;
     width: 100%;
     color: #687384;
     font-size: 20px;
+}
+.nav > div {
+    display: flex;
+    width: 120px;
+    flex-shrink:1;
 }
 .home{
     display: flex;
     align-items: center;
     font-size: 20px;
-    margin: 20px;
-    gap: 5px;
     color: #2083CD;
     position: relative;
 }
@@ -94,7 +96,7 @@ body{
     align-items: center;
     font-size: 20px;
     margin: 20px;
-    gap: 5px;
+    gap: px;
 }
 .messeges:active{
     color: #2083CD;
@@ -105,7 +107,7 @@ body{
     align-items: center;
     font-size: 20px;
     margin: 20px;
-    gap: 5px;
+    gap: px;
 }
 .groups:active{
     color: #2083CD;
@@ -116,7 +118,6 @@ body{
     align-items: center;
     font-size: 20px;
     margin-right: 20px;
-    gap: 5px;
 }
 .channels:active{
     color: #2083CD;
@@ -132,9 +133,10 @@ body{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     gap: 20px;
     align-items: center;
+
     
 }
 .contact-list-header{
@@ -145,7 +147,7 @@ body{
 
 .contact-list-header > h2{
     flex-grow: 1;
-    margin-left: 20px;
+    margin-left: 30px;
     color: #3d465d;
 }
 
@@ -154,6 +156,12 @@ body{
     color: #3d465d;
     width: 35px;
     height: 35px;
+}
+.list{
+    display: flex;
+    flex-direction:column ;
+    width: 100%;
+    gap: 10px;
 }
 
 .contact-1{
@@ -165,6 +173,8 @@ body{
     height: 100px;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 10px 10px 100px -40px ;
+    box-shadow: -20px 10px 100px -40px ;
 }
 
 .avatar-wrapper{
@@ -358,4 +368,136 @@ body{
     margin-left: 5px;
     height: 15px;
     width: 15px;
+}
+
+.group_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.group_header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.group_header > h2{
+    font-size: 30px;
+    flex-grow: 1;
+    margin-left: 20px;
+    color: #3d465d;
+}
+
+.group_header > svg{
+    margin-right: 20px;
+    color: #3d465d;
+    width: 35px;
+    height: 35px;
+}
+
+.group_1{
+    background-color: #FEFEFE;
+    display: flex;
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.avatar_pc_group_1{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    border-radius: 40%;
+}
+
+.group_2{
+    background-color: #FEFEFE;
+    display: flex;
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.avatar_pc_group_2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 40%;
+}
+.avatar-wrapper_group_2{
+    position: relative;
+    align-self: flex-end;
+}
+.avatar-wrapper_group_2::after{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #b5bac9;
+    border-radius: 50%;
+    border: 5px solid white;
+    bottom: 0px;
+    right: 0px;
+}
+.payam{
+    text-align: center;
+    width: 30px;
+    padding: 1px;
+    color: white;
+    background-color: #2083CD;
+    border-radius: 25px;
+}
+
+.menu_footer{
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    color: #b5bac9;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.menu_footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}    
+
+.menu_footer > div > svg{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.menu_footer_home{
+    color: #2083CD;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu_footer_call{
+    margin-right: 180px;
+}
+
+.menu_footer_ghalam{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #2083CD;
+    color: white;
+    position: absolute;
+    top: -40%;
 }
